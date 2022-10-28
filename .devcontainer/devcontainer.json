@@ -1,0 +1,17 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "ms-python.python"
+            ]
+        }
+    },
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "workspace",
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace",
+    "onCreateCommand": "pip install -r /workspace/backend/requirements.txt"
+}

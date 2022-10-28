@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    workspace:
+        platform: linux/amd64
+        init: true
+        build: "."
+        volumes:
+            - "./..:/workspace"
+        ports:
+            - "3000:3000"
+            - "3003:3003"
+        command: /bin/sh -c "while sleep 1000; do :; done"
